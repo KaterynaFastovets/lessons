@@ -1,3 +1,4 @@
+/*@import url(reset.css);*/
 h1 {
    color: rgb(99, 8, 8);
 }
@@ -13,6 +14,10 @@ h1 {
 li > a {
    color: rgb(35, 146, 15);
 }*/
+.questions-item.item {
+   color: blueviolet;
+}
+
 .item,
 li,
 .item a {
@@ -63,4 +68,17 @@ span {
 }
 [target] {
    color: rgb(135, 238, 135);
+}
+[class*="title"] {
+   color: red;
+}
+.questions-list-1 .item-2 {
+   color: blue;
+}
+.list .list-item .item-3 {
+   color: black;
+}
+
+h2 + p {
+   color: blue;
 }
