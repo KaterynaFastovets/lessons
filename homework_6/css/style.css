@@ -191,7 +191,7 @@ h2 {
       rgba(255, 64, 58, 0.001) 0%,
       rgba(247, 94, 5, 0.3) 100%
     ),
-    url("../image/photo.jpeg") no-repeat right top / 800px;
+    url("../image/photo.jpeg") no-repeat right top / 600px;
   text-decoration: underline;
   text-transform: capitalize;
   text-shadow: 1px 1px 1px #020024;
@@ -234,7 +234,7 @@ h2 {
 .task1 p {
   font-weight: 300;
   margin: 0 auto;
-  max-width: 157px;
+  
 }
 .task1 p span {
   font-weight: 500;
