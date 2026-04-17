@@ -279,8 +279,9 @@ h2 {
   color: #ffffff;
   background-color: #0a84ff;
   margin-bottom: 85px;
-  padding: 13px 79px;
+  padding: 13px 26px;
   border-radius: 12px;
+  min-width: 235px;
 }
 .container {
   padding: 35px;
@@ -391,4 +392,6 @@ footer {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 5px 5px 5px 5px #615967;
+  transform: translateY(3px);
+  transition: all 0.3s;
 }
