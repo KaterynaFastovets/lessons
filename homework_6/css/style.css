@@ -28,8 +28,9 @@ body {
   margin-bottom: 5px;
   box-shadow: 0px 2px 2px 0px #615967;
 }
-h1,
-h2 {
+.header h1,
+.block-info h2,
+.block-task > h2 {
   font-style: italic;
   font-weight: 700;
   font-size: 30px;
@@ -39,9 +40,6 @@ h2 {
     1px 1px 2px #faf4ff,
     5px -3px 5px rgb(137, 19, 228),
     3px -1px 3px #3b3441;
-}
-h2 {
-  color: #020024;
 }
 
 /* ! MAIN */
@@ -200,14 +198,11 @@ h2 {
 /* ! FIGMA_HW */
 
 .block-task {
-  padding: 10px;
   margin-bottom: 10px;
 }
 /* task1 */
+
 .task1 {
-  margin-bottom: 20px;
-}
-.header-task1 {
   text-align: center;
   color: #000000;
   font-family: Poppins, sans-serif;
@@ -218,6 +213,7 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 20px;
 }
 .content-task1 {
   margin: 0 auto;
@@ -227,25 +223,36 @@ h2 {
 .logo {
   max-width: 77px;
 }
-.content-task1 h3 {
+.title-task1 {
   font-size: 48px;
   line-height: 1.5; /* 72/48 */
 }
-.task1 p {
-  font-weight: 300;
-  margin: 0 auto;
-  
+.breadcrumbus {
+  display: inline-block;
 }
-.task1 p span {
+
+.breadcrumbus-item {
+  display: inline-block;
+  font-weight: 300;
+}
+.breadcrumbus-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5; /* 24/16 */
 }
-.arrow {
-  margin-right: 6px;
+.breadcrumbus-link::after {
+  display: inline-block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../image/arrow1.png");
+  background-position: 0 3px;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-left: 6px;
-  max-width: 20px;
-  height: auto;
+}
+.breadcrumbus-item {
+  margin: 0 auto;
 }
 
 /* task2 */
@@ -254,14 +261,17 @@ h2 {
   font-family: Barlow, sans-serif;
   font-weight: 400;
   background-color: #030303;
+  padding-bottom: 35px;
 }
 .header-task2 {
   padding-top: 94px;
+  padding-bottom: 85px;
   text-align: center;
   background-image: url("../image/bg2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 35px;
 }
 .title-task2 {
   text-transform: uppercase;
@@ -278,42 +288,38 @@ h2 {
   line-height: 1.5;
   color: #ffffff;
   background-color: #0a84ff;
-  margin-bottom: 85px;
   padding: 13px 26px;
   border-radius: 12px;
   min-width: 235px;
 }
+
 .container {
-  padding: 35px;
-}
-.content-task2 {
+  max-width: 770px;
   font-weight: 400;
   font-size: 16px;
   color: #b3b3b2;
   line-height: 1.5;
   background-color: #1a1a1a;
-  padding: 32px;
   border-radius: 12px;
+  padding: 32px;
+  margin: 0 auto;
 }
-.subcontent1,
-.subcontent2,
-.subcontent3, .subcontent1 p,
-.subcontent4 p {
+
+.container p {
   margin-bottom: 24px;
 }
-#subcontent4-last-p,
-#subcontent1-last-p {
-  margin-bottom: 0px;
+.container p:last-of-type {
+  margin-bottom: 0;
 }
-.subcontent2 li,
-.subcontent3 li {
+
+.container li {
   margin-bottom: 10px;
   background: url("../image/item2.png") 0 3px no-repeat;
   padding-left: 26px;
   padding-top: 2px;
 }
 
-.content-task2 h5 {
+.container h3 {
   font-weight: 500;
   font-size: 24px;
   text-transform: uppercase;
