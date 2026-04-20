@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Apple Color Emoji";
+  src: url("../fonts/Apple\ Color\ Emoji.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: EmojiOne;
+  src: url("../fonts/EmojiOne.woff2") format("woff2");
+  font-style: normal;
+  font-size: normal;
+}

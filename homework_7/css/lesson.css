@@ -1,0 +1,347 @@
+/* @import url("reset.css"); */
+
+/* Локальне підключення шрифтів */
+/* @import url("fonts.css"); */
+
+/* Підключення віддалених шрифтів */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap"); */
+
+/* Значення за замовченням  */
+body {
+	/* font-family: "InterDisplay"; */
+	font-family: "Poppins", sans-serif;
+
+	padding: 30px;
+	background-color: #333;
+	color: #fff;
+}
+/* ======================================================== */
+
+/* ============================================= */
+/* =============== Псевдокласи ================= */
+/* ============================================= */
+
+/* Анатомія псевдокласів */
+/*
+селектор:псевдоклас{
+}
+*/
+/*
+Вкладеність
+селектор#1:псевдоклас селектор#2{
+}
+*/
+
+/* Псевдокласи стану */
+
+/* Стан "спокою" */
+.link {
+	color: yellow;
+}
+
+/*
+:hover
+Звернення до елемента у стані 
+"при наведенні курсору"
+Застосовується до будь-якого елемента
+*/
+/* .link:hover {
+	color: green;
+	text-decoration: underline;
+} */
+
+/* Span стилізується при наведенні на .link */
+/* .link:hover span {
+	color: red;
+} */
+/* Span стилізується при наведенні на span */
+/* .link span:hover {
+	color: red;
+} */
+
+/*
+:active Звернення до елемента у стані 
+"при натиснутій клавіші миші"
+*/
+
+/* .link:active {
+	color: blue;
+} */
+
+/*
+:visited Звернення до тега A 
+у стані "відвіданого посилання"
+обмежена кількість властивостей
+
+Варто зазначити, що через міркування безпеки 
+та конфіденційності браузери дозволяють 
+змінювати лише деякі властивості для псевдокласу :visited, такі як:
+• color (колір тексту),
+• background-color (колір фону),
+• border-color (колір рамки),
+• outline-color (колір обвідки),
+• column-rule-color (колір розділових ліній у колонках),
+• text-decoration-color (колір текстових прикрас).
+*/
+
+/* .link:visited {
+	color: rgb(105, 105, 50);
+} */
+
+/*
+:focus, :focus-visible Звернення до 
+елементу у стані "фокусу"
+*/
+
+/* Завжди коли взаємодіємо з об'єктом */
+/* .link:focus {
+	outline: 1px solid red;
+} */
+
+/* .input:focus {
+	outline: 1px solid red;
+} */
+
+/* Тільки коли на об'єкт перейшли (TAB) */
+/* .link:focus-visible {
+	outline: 1px solid red;
+} */
+
+/*
+:target
+Звернення до елемента у стані
+"ефекту від посилання з іншого об'єкту"
+*/
+
+/* .block {
+	display: none;
+	width: 100px;
+	height: 100px;
+	background-color: #7a956b;
+}
+.block:target {
+	display: block;
+	background-color: #77608d;
+} */
+
+/* Псевдокласи положення у коді */
+
+.text {
+	padding: 15px;
+	background-color: #7a956b;
+}
+.text p {
+	margin-bottom: 10px;
+}
+
+/*
+:first-child
+Звернення до першого дочірнього елементу в коді
+*/
+
+/* якщо тег P перший */
+/* .text p:first-child {
+	color: #000;
+} */
+
+/* 
+:first-of-type
+Звернення до першого вказаного 
+об'єкту в коді
+*/
+/* .text p:first-of-type {
+	color: #000;
+} */
+
+/*
+:last-child
+Звернення до останього 
+елементу в коді
+*/
+
+/* якщо тег P останній */
+/* .text p:last-child {
+	color: #000;
+} */
+
+/* останній тег P */
+/* .text p:last-of-type {
+	color: #000;
+} */
+
+/* Шукає елемент за номером */
+
+/*
+:nth-child(значення/алгоритм)
+Звернення до конкретного елементу (ів) в коді
+*/
+
+/* .text p:nth-child(2) {
+	color: #000;
+} */
+
+/* Шукає вказаний селектор за номером */
+/* 
+:nth-of-type()
+*/
+/* .text p:nth-of-type(2) {
+	color: #000;
+} */
+
+/* 
+	Алгоритми NTH
+	odd - через один не парні
+	even - через один парні
+*/
+
+/* .text p:nth-of-type(odd) {
+	color: #000;
+} */
+
+/* Алгоритм "кожен-через" */
+/* коженn + починаючи з */
+
+/* Кожен третій */
+/* .text p:nth-of-type(3n) {
+	color: #000;
+} */
+
+/* Кожен третій починаючи з першого */
+/* .text p:nth-of-type(3n + 2) {
+	color: #000;
+} */
+
+/* Кожен 4 починаючи з 2 */
+/* .text p:nth-of-type(4n + 2) {
+	color: #000;
+} */
+
+/* Кожен 6 починаючи з 3 */
+/* та кожен 6 починаючи з 4 */
+
+/* .text p:nth-of-type(6n + 3),
+.text p:nth-of-type(6n + 4) {
+	color: #000;
+} */
+
+/*
+:not(селектор або псевдоклас) 
+Псевдоклас виключення
+*/
+/* .link:not(.active) {
+	display: none;
+} */
+
+/* .button:not(button) {
+	color: red;
+} */
+
+/* 
+:has(селектор або псевдоклас) 
+Псевдоклас присутності в коді
+*/
+
+/* .text:has(p) {
+	color: #000;
+} */
+
+/* Гарна практика */
+/* 
+.some-block {
+	padding: 15px;
+	background-color: #77608d;
+}
+.some-block > * {
+	margin-bottom: 17px;
+}
+.some-block__title {
+	font-size: 24px;
+	font-weight: 700;
+}
+.some-block__text {
+	line-height: 1.4;
+	margin-bottom: 34px;
+}
+.some-block__link:not(:hover) {
+	text-decoration: underline;
+}
+.some-block > *:last-child {
+	margin-bottom: 0;
+} */
+
+/* 
+	!!!
+	Псевдокласи мають більший пріоритет
+	(уточнення)
+*/
+
+/* ============================================= */
+/* =============== Псевдоелементи ============== */
+/* ============================================= */
+
+/* Анатомія псевдоелементів */
+/*
+селектор::псевдоелемент{
+}
+
+Псевдоелементи не можна додати до 
+одинарних тегів (без зачиняючих елементів) (наприклад img,br), 
+тому що ці теги не можуть містити в собі контенту.
+*/
+
+/*
+::before{}
+::after{}
+
+!!!!! Псевдоелементи - рядкові (але в reset 
+доданий display: inline-block;) !!!!!
+Властивість content: ""; - Обов'язкова!
+*/
+/* .some {
+}
+.some::before {
+	content: "Before";
+	color: yellow;
+}
+.some::after {
+	content: "After";
+	color: yellow;
+} */
+
+/* .list {
+}
+.list__item {
+}
+.list__item::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	background-color: #7a956b;
+	margin-right: 10px;
+	transition: all 0.8s;
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 10px;
+}
+.list__item:hover::before {
+	background-color: #fff;
+	rotate: 360deg;
+} */
+
+/* .title {
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.title::after {
+	content: "";
+	height: 2px;
+	width: 80%;
+	background-color: red;
+	display: block;
+	margin-top: 3px;
+} */
