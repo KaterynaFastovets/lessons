@@ -1,0 +1,86 @@
+body {
+  font-family: "Poppins-Regular", sans-serif;
+  color: rgb(65, 64, 64);
+  text-align: center;
+  background: #ffeeee;
+  background: -webkit-linear-gradient(to right, #ddefbb, #ffeeee);
+  background: linear-gradient(to right, #ddefbb, #ffeeee);
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+  box-shadow: 1px 1px 15px #ddefbb;
+}
+h1 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow:
+    3px 3px 13px #565754,
+    3px 3px 10px #95a776;
+}
+
+.article h2 {
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  background-color: #95a776;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px #565754;
+}
+h3 {
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #565754;
+}
+
+.article > *:not(.img-adaptive) {
+  margin-bottom: 20px;
+}
+
+.item:nth-of-type(1)::before {
+  background: url("../img/user.svg") 0 4px / 23px no-repeat;
+}
+.item:nth-of-type(2)::before {
+  background: url("../img/like.svg") 0 4px / 23px no-repeat;
+}
+.item:nth-of-type(3)::before {
+  background: url("../img/search.svg") 0 4px / 23px no-repeat;
+}
+.item:nth-of-type(4)::before {
+  background: url("../img/basket.svg") 0 4px / 23px no-repeat;
+}
+
+.item:nth-of-type(1)::before,
+.item:nth-of-type(2)::before,
+.item:nth-of-type(3)::before,
+.item:nth-of-type(4)::before {
+  content: "";
+  padding-left: 40px;
+  min-height: 25px;
+}
+.img-content-icon {
+  min-width: 100px;
+}
+.img-content-icon:not(:nth-of-type(4)) {
+  margin-right: 30px;
+}
+footer span {
+  margin-right: 50px;
+}
+.button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  min-width: 100px;
+  border: 1px solid #d7f2a6;
+  background-color: #95a776;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #dae5c4;
+}
+.button:active {
+  background-color: #565754;
+  color: #ffeeee;
+}

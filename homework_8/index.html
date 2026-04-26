@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <!-- !fonts_css -->
+    <link rel="stylesheet" href="css/fonts.css" >
+    <!-- !style_css -->
+    <link rel="stylesheet" href="css/reset.css" >
+    <link rel="stylesheet" href="css/style.css" >
+    <title>Homework_8</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Заняття 8 Веб графіка, формати зображень</h1>
+    </header>
+    <main>
+      <div class="article">
+        <h2>Векторна WEB графіка</h2>
+        <h3>Інтеграція за допомогою фону</h3>
+        <ol class="list">
+          <li class="item">Векторна іконка, SVG</li>
+          <li class="item">Векторна іконка, SVG</li>
+          <li class="item">Векторна іконка, SVG</li>
+          <li class="item">Векторна іконка, SVG</li>
+        </ol>
+        <h3>
+          Інтеграція за допомогою тегу img - векторні контентні зображення
+          іконки SVG
+        </h3>
+        <img class="img-content-icon" src="./img/user.svg" alt="Іконка користувача" >
+        <img class="img-content-icon"  src="./img/like.svg" alt="Іконка лайк" >
+        <img class="img-content-icon" src="./img/search.svg" alt="Іконка пошуку" >
+        <img class="img-content-icon" src="./img/basket.svg" alt="Іконка корзина" >
+        <h2>Растова WEB графіка</h2>
+        <h3>Конвертація зображення PNG у WebP</h3>
+          <img class="img-webp" src="img/gallery-1-1x.webp" alt="Диван" >
+          <img class="img-webp" src="img/gallery-2-1x.webp" alt="Столик" >
+          <img class="img-webp"
+            src="img/gallery-3-1x.webp"
+            alt="Елементи декорації кімнати"
+          >
+        <h3>Конвертація зображення JPEG у AVIF</h3>
+          <img class="img-avif"
+            src="img/background-4x.avif"
+            alt="Крісло вазон з квіткою та напольна лампа"
+          >
+        <h3>
+          Адаптивні зображення у форматі AVIF (1х-4х), конвертовані з JPEG
+        </h3>
+        <h4>
+          Використання тегу picture для вибору оптимального формату зображення
+        </h4>
+        <!-- ? Чому не працюють margin-buttom без div -->
+        <div><picture class="picture-adaptive">
+          <source
+            srcset="
+              ./img/background-2x.avif 2x,
+              ./img/background-3x.avif 3x,
+              ./img/background-4x.avif 4x
+            "
+          >
+          <img
+            src="img/background-1x.avif"
+            alt="Крісло вазон з квіткою та напольна лампа"
+          >
+        </picture></div>
+        <h4>
+          Використання тегу srcset для вибору оптимального формату зображення
+          (не підтримується Safari)
+        </h4>
+        <img class="img-adaptive"
+          srcset="
+            img/background-2x.avif 2x,
+            img/background-3x.avif 3x,
+            img/background-4x.avif 4x
+          "
+          src="img/background-1x.avif"
+          alt="Крісло вазон з квіткою та напольна лампа"
+        >
+      </div>
+    </main>
+    <footer><span>&copy; 2026p.</span><a class="button" href="#header">На початок</a>
+    </footer>
+  </body>
+</html>
