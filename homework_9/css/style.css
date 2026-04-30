@@ -4,7 +4,7 @@ body {
   background-color: #161616;
   color: rgb(160, 159, 159);
 }
-header {
+header, footer {
   text-align: center;
   font-size: 35px;
   color: #ffffff;
@@ -12,7 +12,8 @@ header {
   background-color: #1e1e1f;
 }
 main {
-  padding: 120px;
+  padding: 50px;
+ 
 }
 main > :not(:last-child) {
   margin-bottom: 60px;
@@ -105,4 +106,5 @@ main > :not(:last-child) {
   background-color: #1e1e1f;
   border-radius: 12px;
 }
+
 
