@@ -163,7 +163,6 @@ body a:focus {
   text-decoration: underline;
 }
 
-
 /* !task_1 */
 
 .block-task1 {
@@ -221,7 +220,7 @@ body a:focus {
   background-size: cover;
   border: 3px solid #3f3d3d;
 }
-.game div:not(:first-child):not(:last-child) {
+.game div:not(:first-child) {
   background-image: url("../img/football_r.jpg");
   background-size: 20px;
   background-repeat: no-repeat;
@@ -307,59 +306,8 @@ body a:focus {
   margin-left: 15px;
 }
 
-.game div:first-child:hover + div:nth-of-type(2),
-.game div:nth-of-type(2):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(2):hover + div:nth-of-type(3),
-.game div:nth-of-type(3):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(3):hover + div:nth-of-type(4),
-.game div:nth-of-type(4):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.game div:nth-of-type(4):hover + div:nth-of-type(5),
-.game div:nth-of-type(5):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(5):hover + div:nth-of-type(6),
-.game div:nth-of-type(6):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(6):hover + div:nth-of-type(7),
-.game div:nth-of-type(7):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(7):hover + div:nth-of-type(8),
-.game div:nth-of-type(8):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(8):hover + div:nth-of-type(9),
-.game div:nth-of-type(9):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(9):hover + div:nth-of-type(10),
-.game div:nth-of-type(10):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(10):hover + div:nth-of-type(11),
-.game div:nth-of-type(11):hover {
-  opacity: 1;
-  pointer-events: auto;
-}
-.game div:nth-of-type(11):hover + div:nth-of-type(12),
-.game div:nth-of-type(12):hover {
+.game div:hover + div,
+.game div:hover {
   opacity: 1;
   pointer-events: auto;
 }
