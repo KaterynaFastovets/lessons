@@ -4,7 +4,9 @@ body {
   background-color: #161616;
   color: rgb(160, 159, 159);
 }
-header, footer {
+
+header,
+footer {
   text-align: center;
   font-size: 35px;
   color: #ffffff;
@@ -12,8 +14,8 @@ header, footer {
   background-color: #1e1e1f;
 }
 main {
+    margin: 0 auto;
   padding: 50px;
- 
 }
 main > :not(:last-child) {
   margin-bottom: 60px;
@@ -22,8 +24,7 @@ main > :not(:last-child) {
 .arrow {
   border-radius: 50%;
 }
-
-.bottom {
+.content-card__bottom, .card__bottom {
   text-align: center;
   text-transform: uppercase;
   padding: 10px 15px;
@@ -31,7 +32,10 @@ main > :not(:last-child) {
   background-color: #c8abab2c;
   border-radius: 8px;
 }
-.bottom:hover {
+.content-card__bottom{
+   margin-right: 320px;
+}
+.content-card__bottom:hover, .card__bottom:hover {
   background-color: #bdb6b6;
   color: #161616;
 }
@@ -49,9 +53,10 @@ main > :not(:last-child) {
 .block__layout {
   margin-bottom: 12px;
 }
-.card {
-  display: flex;
+.card > * {
+  display: inline-block;
 }
+
 .card__content {
   max-width: 688px;
   padding: 32px;
@@ -59,12 +64,14 @@ main > :not(:last-child) {
   margin-right: 30px;
   background-color: #1e1e1f;
 }
-.card .content-card > :not(:last-child) {
+.content-card, .content-card > :not(:last-child) {
   margin-bottom: 32px;
 }
-.content-card__image {
-  border-radius: 12px;
+.content-card__image{
+border-radius: 12px;
+overflow: hidden;
 }
+
 .content-card__date::before {
   content: "";
   display: inline-block;
@@ -101,10 +108,22 @@ main > :not(:last-child) {
   margin-bottom: 12px;
 }
 .item__question {
-  text-align: left;
+  position: relative; 
+ text-align: left;
   padding: 24px 32px;
   background-color: #1e1e1f;
   border-radius: 12px;
 }
+.item__question >*{
+  display: inline-block;
+}
 
+.item__question a{
+  position: absolute;
+  top: 24%;
+  right: 32px;
+}
+.item__question p{
+margin-right: 100px;
+}
 
