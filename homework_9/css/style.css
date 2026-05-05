@@ -23,7 +23,7 @@ main > :not(:last-child) {
 
 .content-card__bottom,
 .card__title-button {
-display: inline-block;
+  display: inline-block;
   text-transform: uppercase;
   padding: 10px 15px;
   background-color: #c8abab2c;
@@ -34,8 +34,7 @@ display: inline-block;
 }
 .content-card__bottom:hover,
 .card__title-button:hover {
-  background-color: #bdb6b6;
-  color: #161616;
+  box-shadow: 0px 0px 12px #000000;
 }
 .block {
   text-align: center;
@@ -89,20 +88,26 @@ display: inline-block;
   text-shadow: 1px 0px 0px #ffffff;
 }
 .content-card__image:hover {
-  border-radius: none;
-  overflow: visible;
+  box-shadow: 0px 0px 12px #000000;
 }
 
 .content-card__navigation::after {
   display: inline-block;
   content: "";
   background: url("../img/article_arrow.svg") no-repeat center / contain;
+  border-radius: 50%;
   width: 20px;
   min-height: 20px;
   margin-left: 10px;
 }
-.card__item:hover,.card__content:hover,.list__question-item:hover{
- background-color: #272728;
+.content-card__navigation:hover::after {
+  box-shadow: 0px 0px 12px #000000;
+}
+
+.card__item:hover,
+.card__content:hover,
+.list__question-item:hover {
+  background-color: #212122;
 }
 .card__item {
   max-width: 482px;
@@ -148,4 +153,7 @@ display: inline-block;
 
 .arrow {
   border-radius: 50%;
+}
+.arrow:hover {
+  box-shadow: 0px 0px 12px #000000;
 }
