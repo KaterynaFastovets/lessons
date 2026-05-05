@@ -14,28 +14,26 @@ footer {
   background-color: #1e1e1f;
 }
 main {
-    margin: 0 auto;
+  margin: 0 auto;
   padding: 50px;
 }
 main > :not(:last-child) {
   margin-bottom: 60px;
 }
 
-.arrow {
-  border-radius: 50%;
-}
-.content-card__bottom, .card__bottom {
-  text-align: center;
+.content-card__bottom,
+.card__title-button {
+display: inline-block;
   text-transform: uppercase;
   padding: 10px 15px;
-  min-width: 100px;
   background-color: #c8abab2c;
   border-radius: 8px;
 }
-.content-card__bottom{
-   margin-right: 320px;
+.content-card__bottom {
+  margin-right: 320px;
 }
-.content-card__bottom:hover, .card__bottom:hover {
+.content-card__bottom:hover,
+.card__title-button:hover {
   background-color: #bdb6b6;
   color: #161616;
 }
@@ -64,12 +62,13 @@ main > :not(:last-child) {
   margin-right: 30px;
   background-color: #1e1e1f;
 }
-.content-card, .content-card > :not(:last-child) {
+.content-card,
+.content-card > :not(:last-child) {
   margin-bottom: 32px;
 }
-.content-card__image{
-border-radius: 12px;
-overflow: hidden;
+.content-card__image {
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .content-card__date::before {
@@ -84,46 +83,69 @@ overflow: hidden;
   font-size: 34px;
   color: #ffffff;
 }
+.content-card__title:hover,
+.content-card__date:hover,
+.content-card__navigation:hover {
+  text-shadow: 1px 0px 0px #ffffff;
+}
+.content-card__image:hover {
+  border-radius: none;
+  overflow: visible;
+}
 
+.content-card__navigation::after {
+  display: inline-block;
+  content: "";
+  background: url("../img/article_arrow.svg") no-repeat center / contain;
+  width: 20px;
+  min-height: 20px;
+  margin-left: 10px;
+}
+.card__item:hover,.card__content:hover,.list__question-item:hover{
+ background-color: #272728;
+}
 .card__item {
   max-width: 482px;
   padding: 32px;
   border-radius: 20px;
   background-color: #1e1e1f;
 }
-.card__item:not(:last-child) {
-  margin-bottom: 30px;
+.card__item a > :not(:last-child) {
+  margin-bottom: 25px;
 }
-.card__item > :not(:last-child) {
+.card__list > :not(:last-child) {
   margin-bottom: 12px;
 }
 .card__title {
-  font-size: 24px;
+  font-size: 26px;
   color: #ffffff;
 }
-.item {
+.list {
   text-align: center;
 }
-.item > :not(:last-child) {
+.list > :not(:last-child) {
   margin-bottom: 12px;
 }
-.item__question {
-  position: relative; 
- text-align: left;
+.list__question-item {
+  position: relative;
+  text-align: left;
   padding: 24px 32px;
   background-color: #1e1e1f;
   border-radius: 12px;
 }
-.item__question >*{
+.list__question-item > * {
   display: inline-block;
 }
 
-.item__question a{
+.list__question-item a {
   position: absolute;
   top: 24%;
   right: 32px;
 }
-.item__question p{
-margin-right: 100px;
+.list__question-item p {
+  margin-right: 100px;
 }
 
+.arrow {
+  border-radius: 50%;
+}
