@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Homework_11</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <h1 class="header__title">Заняття_11 Трансформації</h1>
+                <div class="header__menu menu">
+                    <ol class="menu__list list-menu">
+                        <li class="list-menu__item"><a href="#" class="list-menu__link">transform</a></li>
+                        <li class="list-menu__item submenu"><a href="#" class="submenu__link">2D Трансформації</a>
+                            <ol class="submenu__list two-submenu">
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">transform</a></li>
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">translate</a></li>
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">scale</a></li>
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">rotate</a></li>
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">skew</a></li>
+                                <li class="two-submenu__item"><a href="#" class="two-submenu__link">perspective</a></li>
+                            </ol>
+                        </li>
+                        <li class="list-menu__item submenu"><a href="#" class="submenu__link">3D Трансформації</a>
+                            <ol class="submenu__list three-submenu">
+                                <li class="three-submenu__item"><a href="#" class="three-submenu__link">translate3d</a>
+                                </li>
+                                <li class="three-submenu__item"><a href="#" class="three-submenu__link">scale3d</a></li>
+                                <li class="three-submenu__item"><a href="#" class="three-submenu__link">translate3d</a>
+                                </li>
+                                <li class="three-submenu__item"><a href="#"
+                                        class="three-submenu__link">transform-style</a></li>
+                                <li class="three-submenu__item"><a href="#"
+                                        class="three-submenu__link">backface-visibility</a></li>
+                                <li class="three-submenu__item"><a href="#" class="three-submenu__link">flipper</a></li>
+                            </ol>
+                        </li>
+                        <li class="list-menu__item"><a href="#" class="list-menu__link ">task</a></li>
+                    </ol>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__block">
+                    <h2 id="top" class="page__title">Трансформації</h2>
+                    <ol class="page__list">
+                        <li class="page__item">scale: -1 1;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">scale: 1.1;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">scale: 0.5;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">translate: -15px -10px;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">translate: 15px 10px;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">rotate: 360deg;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">rotateX(43deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">rotateY(43deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">skew(15deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">skewY(15deg);<br>
+                            transform-origin: <br>top left;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">rotate(360deg);<br>
+                            transform-origin: <br> bottom right;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item"> scale3d(1.5,0.5, 1) <br> skewX(25deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item"> translate3d <br> (10px, 15px, 10px);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item"> rotateX(180deg); <br>
+                            backface-visibility: <br> hidden;
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item"> preserve-3d; <br>
+                            rotate3d <br> (10, 45, 30, 80deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">
+                            rotate3d <br> (10, 45, 30, 80deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+
+                        <li class="page__item">
+                             rotateX(360deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                        <li class="page__item">
+                            rotateY(360deg);
+                            <div class="page__parent-block">
+                                <div class="page__child-block"></div>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="page__block">
+                    <h2 class="page__title">Task</h2>
+                    <div class="page__task">
+                        <div class="page__road-sign road-sign">
+                            <div class="road-sign__arrow"><img src="img/arrow.jpg" alt="arrow"></div>
+                            <div class="road-sign__body"></div>
+                        </div>
+                        <div class="page__car car">
+                            <div class="car__shadow"></div>
+                            <div class="car__body">
+                                <div class="car__light"></div>
+                            </div>
+                            <div class="car__rear-body">
+                                <div class="car__rear-light"></div>
+                            </div>
+                            <div class="car__wheel-fender"></div>
+                            <div class="car__rear-wheel-fender"></div>
+                            <div class="car__wheel-left wheel-left">
+                                <div class="wheel-left__child"></div>
+                            </div>
+                            <div class="car__wheel-right wheel-right">
+                                <div class="wheel-right__child"></div>
+                            </div>
+                            <div class="car__window">
+                                <div class="car__seat"></div>
+                                <div class="car__block">
+                                    <div class="car__helm"></div>
+                                </div>
+                            </div>
+                            <div class="car__rear-window"></div>
+                            <div class="car__exhaust"></div>
+                            <div class=" car__small-exhaust"></div>
+                        </div>
+                        <div class="page__meadow"></div>
+                        <div class="page__field"></div>
+                        <div class="page__road">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <ol class="footer__list">
+                    <li class="footer__item">
+                        <h2 class="footer__title"><a href="#top" class="footer__link">Заняття_11</a></h2>
+                    </li>
+                    <li class="footer__item"><span class="footer__icon"><a target="_blank"
+                                href="https://www.linkedin.com/in/katharadev"
+                                class="footer__link-linkedin"></a></span><span class="footer__icon"><a target="_blank"
+                                href="https://github.com/KaterynaFastovets" class="footer__link-githab"></a></span><span
+                            class="footer__icon"><a href="mailto:katyafastovets@gmail.com"
+                                class="footer__link-mail"></a></span></li>
+                </ol>
+                <div class="footer__layot">
+                    <h3 class="footer__title">&copy; 2026 p. Kateryna Fastovets</h3>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
