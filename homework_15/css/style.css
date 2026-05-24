@@ -310,7 +310,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #b88e2f;
-  transition: 0.3s;
+  transition: all 0.5s;
 }
 
 .item-card__button {
@@ -327,8 +327,7 @@ body {
 
 .gallery-card__button:active,
 .item-card__button:active {
-  background-color: #8c7a4f;
-  color: #fff;
+ opacity: 0.8; 
 }
 
 /* BADGES */
@@ -436,10 +435,10 @@ body {
   background-image: url("../img/github.svg");
 }
 
-.social__link-linkedin:active::after,
-.social__link-githab:active::after,
-.social__link-mail:active::after {
-  box-shadow: 0 0 15px #685c41;
+.social__link-linkedin:active,
+.social__link-githab:active,
+.social__link-mail:active {
+  opacity: 0.7;
 }
 
 /* FOOTER + HEADER */
@@ -524,7 +523,7 @@ body {
   .page__container > :not(:last-child) {
     margin-bottom: 36px;
   }
- 
+
   .gallery > :not(:last-child) {
     margin-bottom: 10px;
   }
@@ -543,7 +542,7 @@ body {
     box-shadow: 0 0 15px #b88e2f;
     width: 30%;
     padding: 10px;
-     transition: left 0.3s;
+    transition: left 0.3s;
   }
   .menu > :not(:last-child) {
     margin-bottom: 12px;
@@ -551,7 +550,16 @@ body {
   .menu-body {
     display: block;
   }
-.menu:target  {
-     left: 0;
+  .menu:target {
+    left: 0;
+  }
+  .item-card__hover {
+    position: relative;
+    background-color: rgba(206, 200, 200, 0.6);
+    opacity: 1;
+    padding: 10px;
+  }
+  .item-card__hover > :not(:last-child) {
+    margin-bottom: 10px;
   }
 }
