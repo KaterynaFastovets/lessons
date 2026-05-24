@@ -41,9 +41,7 @@ body {
   padding: 90px 0px 30px;
 }
 
-
 /* FLEX */
-
 
 .menu,
 .gallery__list,
@@ -62,6 +60,10 @@ body {
 .social,
 .item-card__list {
   justify-content: space-between;
+}
+
+.menu {
+  flex-wrap: wrap;
 }
 
 .gallery__list,
@@ -89,9 +91,7 @@ body {
   gap: 35px;
 }
 
-
 /* MENU */
-
 
 .menu__link {
   text-transform: uppercase;
@@ -110,20 +110,18 @@ body {
   text-underline-offset: 7px;
 }
 
-.menu__link:active,
 .item-card__link-title:active,
 .footer__link:active,
 .section-gallery__link-title:active {
   color: #b88e2f;
 }
 
+.menu__link:active,
 .item-card__link:active {
   color: #242424;
 }
 
-
 /* GALLERY */
-
 
 .gallery {
   max-width: 1213px;
@@ -178,9 +176,7 @@ body {
   line-height: 1.5;
 }
 
-
 /* GALLERY CARD */
-
 
 .gallery-card {
   max-width: 1266px;
@@ -200,9 +196,7 @@ body {
   transition: all 0.3s;
 }
 
-
 /* ITEM CARD */
-
 
 .item-card {
   position: relative;
@@ -259,9 +253,7 @@ body {
   line-height: 1.2;
 }
 
-
 /* BUTTONS */
-
 
 .gallery-card__button,
 .item-card__button {
@@ -297,9 +289,7 @@ body {
   color: #fff;
 }
 
-
 /* BADGES */
-
 
 .item-card__badge {
   text-transform: uppercase;
@@ -323,9 +313,7 @@ body {
   background: #e97171;
 }
 
-
 /* ICONS */
-
 
 .item-card__item,
 .social__icon {
@@ -340,9 +328,9 @@ body {
 }
 
 .item-card__item::before,
-.social__link-linkedin::before,
-.social__link-mail::before,
-.social__link-githab::before {
+.social__link-linkedin::after,
+.social__link-mail::after,
+.social__link-githab::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -380,41 +368,45 @@ body {
 
 /* social icons */
 
-.social__link-linkedin::before,
-.social__link-mail::before,
-.social__link-githab::before {
-  left: -25px;
+.social__link-linkedin,
+.social__link-mail,
+.social__link-githab {
+  padding-left: 30px;
+}
+
+.social__link-linkedin::after,
+.social__link-mail::after,
+.social__link-githab::after {
+  left: 0;
   width: 24px;
   min-height: 24px;
 }
 
-.social__link-linkedin::before {
+.social__link-linkedin::after {
   background-image: url("../img/linkedin.svg");
 }
 
-.social__link-mail::before {
+.social__link-mail::after {
   background-image: url("../img/mail.svg");
 }
 
-.social__link-githab::before {
+.social__link-githab::after {
   background-image: url("../img/github.svg");
 }
 
-.social__link-linkedin:hover::before,
-.social__link-githab:hover::before,
-.social__link-mail:hover::before {
+.social__link-linkedin:hover::after,
+.social__link-githab:hover::after,
+.social__link-mail:hover::after {
   box-shadow: 0 0 15px #b88e2f;
 }
 
-.social__link-linkedin:active::before,
-.social__link-githab:active::before,
-.social__link-mail:active::before {
+.social__link-linkedin:active::after,
+.social__link-githab:active::after,
+.social__link-mail:active::after {
   box-shadow: 0 0 15px #685c41;
 }
 
-
 /* FOOTER + HEADER */
-
 
 .footer,
 .header {
