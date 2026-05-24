@@ -125,6 +125,7 @@ body {
   flex-wrap: wrap;
 }
 
+
 .gallery__list,
 .gallery-card__list {
   align-items: center;
@@ -235,6 +236,10 @@ body {
   padding: 0px 15px;
 }
 
+.gallery-card>:not(:last-child){
+  margin-bottom: 15px;
+}
+
 .gallery-card__title {
   font-weight: 700;
   font-size: 40px;
@@ -327,6 +332,7 @@ body {
 
 .gallery-card__button:active,
 .item-card__button:active {
+  transform: scale(0.98);
  opacity: 0.8; 
 }
 
