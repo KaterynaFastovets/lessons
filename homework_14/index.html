@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Homework_14</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__flex-block">
+          <div class="menu-body">
+            <a href="#menu" class="menu-body__link">MENU</a>
+          </div>
+          <h1 id="top" class="header__title">Заняття_14</h1>
+          <ul id="menu" class="header__menu menu">
+            <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Shop</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">About</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <span class="social__icon">
+                <a href="#" class="social__link-account"></a>
+              </span>
+            </li>
+            <li class="social__item">
+              <span class="social__icon">
+                <a href="#" class="social__link-search"></a>
+              </span>
+            </li>
+            <li class="social__item">
+              <span class="social__icon">
+                <a href="#" class="social__link-like"></a>
+              </span>
+            </li>
+            <li class="social__item">
+              <span class="social__icon">
+                <a href="#" class="social__link-cart"></a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__container">
+          <div class="page__form-task">
+            <div class="form">
+              <form
+                method="POST"
+                action="#"
+                enctype="multipart/form-data"
+                class="form__connection"
+              >
+                <div class="form__box-input">
+                  <label class="form__title" for="name">Your name</label>
+                  <input
+                    id="name"
+                    class="form__input"
+                    type="text"
+                    name="form[]"
+                    required
+                    placeholder="Abc"
+                  />
+                </div>
+                <div class="form__box-input">
+                  <label class="form__title" for="mail">Email address</label>
+                  <input
+                    id="mail"
+                    class="form__input"
+                    type="email"
+                    name="form[]"
+                    required
+                    autocomplete="on"
+                    placeholder="Abc@def.com"
+                  />
+                </div>
+                <div class="form__box-input">
+                  <label class="form__title" for="subject">Subject</label>
+                  <input
+                    id="subject"
+                    class="form__input"
+                    type="text"
+                    name="form[]"
+                    required
+                    placeholder="This is an optional"
+                  />
+                </div>
+                <div class="form__box-input">
+                  <label class="form__title" for="message">Massage</label>
+                  <textarea
+                    name="form[]"
+                    id="message"
+                    class="form__input-message"
+                    required
+                    placeholder="Hi! i’d like to ask about"
+                  ></textarea>
+                </div>
+
+                <div class="form__box-button">
+                  <button class="form__button" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+            <div class="form-radio">
+              <div class="form-radio__size-btn size-btn">
+                <h2 class="size-btn__title">Size</h2>
+                <div class="size-btn__box">
+                  <input
+                    id="size-l"
+                    class="size-btn__input"
+                    name="size"
+                    value="L"
+                    type="radio"
+                  />
+                  <label class="size-btn__label" for="size-l">L</label>
+                  <input
+                    id="size-xl"
+                    class="size-btn__input"
+                    name="size"
+                    value="XL"
+                    type="radio"
+                  />
+                  <label class="size-btn__label" for="size-xl">XL</label>
+                  <input
+                    id="size-xs"
+                    class="size-btn__input"
+                    name="size"
+                    value="XS"
+                    type="radio"
+                  />
+                  <label class="size-btn__label" for="size-xs">XS</label>
+                </div>
+              </div>
+              <div class="form-radio__color-btn color-btn">
+                <h2 class="color-btn__title">Color</h2>
+                <div class="color-btn__radio">
+                  <input
+                    id="indigo"
+                    class="color-btn__input"
+                    name="color-btn"
+                    value="indigo"
+                    type="radio"
+                  />
+                  <label
+                    class="color-btn__label color-btn__label--indigo"
+                    for="indigo"
+                  ></label>
+
+                  <input
+                    id="black"
+                    class="color-btn__input"
+                    name="color-btn"
+                    value="black"
+                    type="radio"
+                  />
+                  <label
+                    class="color-btn__label color-btn__label--black"
+                    for="black"
+                  ></label>
+
+                  <input
+                    id="primary"
+                    class="color-btn__input"
+                    name="color-btn"
+                    value="primary"
+                    type="radio"
+                  />
+                  <label
+                    class="color-btn__label color-btn__label--primary"
+                    for="primary"
+                  ></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-form search">
+            <input
+              class="search__bar"
+              type="search"
+              name="form[]"
+              placeholder="Search..."
+            />
+            <button class="search-form__button">Search</button>
+          </div>
+          <div class="form-item">
+            <div class="form-item__login-form login-form">
+              <form
+                class="login-form__sing-in"
+                method="post"
+                action="#"
+                enctype="multipart/form-data"
+              >
+                <h2 class="login-form__title">Log in to your account</h2>
+                <div class="login-form__google">
+                  <button
+                    type="button"
+                    class="login-form__btn-google btn-google"
+                  >
+                    <img
+                      class="btn-google__img"
+                      src="./img/google-brands-solid-full.svg"
+                      alt="Google icon"
+                    />
+                    <span>Sign in with Google</span>
+                  </button>
+                </div>
+                <div class="login-form__apple">
+                  <button type="button" class="login-form__btn-apple btn-apple">
+                    <img
+                      class="btn-apple__img"
+                      src="./img/apple-brands-solid-full.svg"
+                      alt="Apple icon"
+                    />
+                    <span class="btn-apple__title">Sing in with Apple</span>
+                  </button>
+                </div>
+                <h3 class="login-form__subtitle">Or sign in with</h3>
+                <div class="login-form__item-email">
+                  Email
+                  <input
+                    class="login-form__email-input"
+                    type="email"
+                    autocomplete="on"
+                    required
+                    name="form[]"
+                  />
+                </div>
+                <div class="login-form__item-password">
+                  Password
+                  <input
+                    class="login-form__password-input"
+                    type="password"
+                    minlength="5"
+                    autocomplete="off"
+                    required
+                    name="form[]"
+                  />
+                  <a class="login-form__question" href="#">For got password?</a>
+                </div>
+                <div class="login-form__btn-login"><button>Log in</button></div>
+
+                <div class="login-form__registration-question">
+                  Don't have an account?
+                  <a class="login-form__link-registration" href="#">
+                    Registration
+                  </a>
+                </div>
+              </form>
+            </div>
+            <div class="form-item__registration-form registration-form">
+              <h2 class="registration-form__title">New user registration</h2>
+              <form
+                class="registration-form__registration"
+                method="post"
+                action="#"
+                enctype="multipart/form-data"
+              >
+                <div class="registration-form__first-name first-name">
+                  <input
+                    class="first-name__input"
+                    type="text"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="first-name__line"></span>
+                </div>
+
+                <div class="registration-form__last-name last-name">
+                  <input
+                    class="last-name__input"
+                    type="text"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="last-name__line"></span>
+                </div>
+
+                <div class="registration-form__birthday birthday">
+                  <input
+                    class="birthday__input"
+                    type="date"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="birthday__line"></span>
+                </div>
+
+                <div class="registration-form__phone phone">
+                  <input
+                    class="phone__input"
+                    type="tel"
+                    name="form[]"
+                    pattern="^\+?[0-9]{9,15}$"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="phone__line"></span>
+                </div>
+
+                <div class="registration-form__mail mail">
+                  <input
+                    class="mail__input"
+                    type="email"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="mail__line"></span>
+                </div>
+
+                <div class="registration-form__pas pas">
+                  <input
+                    class="pas__input"
+                    type="password"
+                    minlength="8"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$"
+                    title="Minimum 8 characters: one uppercase letter, one lowercase letter, one number, and one special character"
+                  />
+                  <span class="pas__line"></span>
+                </div>
+                <div class="registration-form__repeat-pas repeat-pas">
+                  <input
+                    class="repeat-pas__input"
+                    type="password"
+                    name="form[]"
+                    required
+                    autocomplete="off"
+                  />
+                  <span class="repeat-pas__line"></span>
+                </div>
+                <div class="registration-form__checkbox checkbox">
+                  <input
+                    id="checkbox"
+                    class="checkbox__input"
+                    name="form[]"
+                    value="on"
+                    required
+                    type="checkbox"
+                  />
+                  <label class="checkbox__label" for="checkbox">
+                    Receive notifications about new arrivals, sales, special
+                    offers
+                  </label>
+                </div>
+                <div class="registration-form__btn-registration">
+                  <button>Sign in</button>
+                </div>
+              </form>
+            </div>
+            <div class="return-form">
+              <h2 class="return-form__title">Product return form</h2>
+              <h3 class="return-form__order-title">
+                <a title="View order" href="#">Order 000000</a>
+              </h3>
+              <form
+                method="post"
+                action="#"
+                enctype="multipart/form-data"
+                class="return-form__list"
+              >
+                <div class="item-1">
+                  <div class="item-1__card">
+                    <div class="item-1__body-img">
+                      <a class="item-1__link-img" href="#">
+                        <img
+                          class="item-1__img"
+                          src="/img/parfum.jpg"
+                          alt="Shampoo Redken Extreme Length "
+                        />
+                      </a>
+                    </div>
+
+                    <div class="item-1__title">
+                      <a href="#">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Ipsa, at animi. Exercitationem quam reiciendis
+                        minima praesentium consectetur
+                      </a>
+                    </div>
+                  </div>
+                  <div class="item-1__input">
+                    <input
+                      class="item-1__checked-input"
+                      id="item-1"
+                      type="checkbox"
+                      name="form[]"
+                      value="item-1"
+                    />
+                    <label class="item-1__checked-label" for="item-1">
+                      Return
+                    </label>
+                  </div>
+                </div>
+
+                <div class="item-1">
+                  <div class="item-1__card">
+                    <div class="item-1__body-img">
+                      <a class="item-1__link-img" href="#">
+                        <img
+                          class="item-1__img"
+                          src="/img/shampoo.jpg"
+                          alt="Shampoo Redken Extreme Length "
+                        />
+                      </a>
+                    </div>
+
+                    <div class="item-1__title">
+                      Redken Extreme Length Lorem ipsum dolor sit amet
+                      consectetur, adipisicing elit. Ipsa, at animi.
+                      Exercitationem quam reiciendis minima praesentium
+                      consectetur aperiam reprehenderit, earum debitis placeat.
+                      Qui sunt enim atque ipsa, aspernatur dolore pariatur?Lorem
+                      ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                      ad saepe, aliquam omnis recusandae a sequi neque veniam
+                      officiis architecto, incidunt sapiente eaque ex dicta
+                      tempora voluptas ut facilis similique?
+                    </div>
+                  </div>
+                  <div class="item-1__input">
+                    <input
+                      class="item-1__checked-input"
+                      id="item-1"
+                      type="checkbox"
+                      name="form[]"
+                      value="item-1"
+                    />
+                    <label class="item-1__checked-label" for="item-1">
+                      Return
+                    </label>
+                  </div>
+                </div>
+
+                <div class="item-1">
+                  <div class="item-1__card">
+                    <div class="item-1__body-img">
+                      <a class="item-1__link-img" href="#">
+                        <img
+                          class="item-1__img"
+                          src="/img/cream.jpg"
+                          alt="Shampoo Redken Extreme Length "
+                        />
+                      </a>
+                    </div>
+
+                    <div class="item-1__title">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel qui officiis sunt beatae! Natus eius optio veniam
+                      excepturi obcaecati earum totam odit est deserunt
+                      exercitationem, corrupti enim quos molestias illo?
+                    </div>
+                  </div>
+                  <div class="item-1__input">
+                    <input
+                      class="item-1__checked-input"
+                      id="item-1"
+                      type="checkbox"
+                      name="form[]"
+                      value="item-1"
+                    />
+                    <label class="item-1__checked-label" for="item-1">
+                      Return
+                    </label>
+                  </div>
+                </div>
+                <div class="return-form__select-list">
+                  <label class="return-form__return-select" for="select">
+                    Select the reason for returning the produkt?
+                  </label>
+                  <select class="return-form__item-select" name="form[]" id="select">
+                    <option value="text">text</option>
+                    <option value="subtext">subtext</option>
+                    <option value="other">other</option>
+                  </select>
+                </div>
+                <div class="return-form__comment">
+                  <label for="comment">Comment</label>
+                  <textarea class="return-form__textarea"
+                    autocomplete="off"
+                    name="form[]"
+                    id="comment"
+                  ></textarea>
+                </div>
+                <div class="return-form__btn btn">
+                  <button>Submit</button>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__flex-block">
+            <h2 class="footer__title">
+              <a href="#top" class="footer__link">Заняття_14</a>
+            </h2>
+            <ul class="social">
+              <li class="social__item">
+                <span class="social__icon">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/katharadev"
+                    class="social__link-linkedin"
+                  ></a>
+                </span>
+              </li>
+              <li class="social__item">
+                <span class="social__icon">
+                  <a
+                    target="_blank"
+                    href="https://github.com/KaterynaFastovets"
+                    class="social__link-github"
+                  ></a>
+                </span>
+              </li>
+              <li class="social__item">
+                <span class="social__icon">
+                  <a
+                    href="mailto:katyafastovets@gmail.com"
+                    class="social__link-mail"
+                  ></a>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__layot">
+            <h3 class="footer__title">&copy; 2026 p. Kateryna Fastovets</h3>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
