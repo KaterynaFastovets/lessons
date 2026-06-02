@@ -31,6 +31,27 @@ body {
   animation: spead 15s linear forwards;
 }
 
+.car__trace {
+    position: absolute;
+    left: 450px;
+    bottom: 120px;
+    width: 1500px;
+    height: 80px;
+
+    background:
+      repeating-linear-gradient(
+        90deg,
+        #4a2d1f 0px,
+        #4a2d1f 8px,
+        #6b442f 8px,
+        #6b442f 16px
+      );
+      border-radius: 10px;
+      box-shadow: 0 20px 90px  #302018;
+
+    transform: perspective(200px) rotateX(75deg);
+}
+
 @keyframes spead {
   0% {
     transform: translateX(1400px) scale(1);
