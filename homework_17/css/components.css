@@ -1,0 +1,17 @@
+.title{
+    font-weight: 600;
+   font-size: 36px; 
+   line-height: 1.556;
+   text-align: center;
+   margin-bottom: 40px;
+}
+.sub-section {
+  border-radius: 36px;
+  background-color: #141414;
+  text-align: center;
+  justify-content: center;
+  padding: 42px 10px;
+  transition:
+    box-shadow 0.3s,
+    scale 0.2s;
+}

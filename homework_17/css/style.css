@@ -1,0 +1,224 @@
+body {
+  font-family: "Barlow", sans-serif;
+  background-color: #030303;
+  color: #ffffff;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+}
+main {
+  padding: 20px 0;
+}
+/* ========================= */
+
+
+.article {
+  background-image: radial-gradient(#4e4e4e 1px, transparent 1px);
+  background-size: 10px 10px;
+  padding: 44px 0;
+  margin-bottom: 134px;
+}
+.title__link:active{
+  color: rgba(0, 0, 255, 0.562);
+}
+.article__container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.article__container > :not(:last-child) {
+  margin-bottom: 123px;
+}
+.article__block {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.article__block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.article__img {
+  max-width: 492px;
+}
+.img {
+  max-width: 100%;
+}
+.img__link {
+  transition: scale 0.5s;
+}
+.article__text {
+  line-height: 1.188;
+  max-width: 594px;
+}
+.article__text p:not(:last-child) {
+  margin-bottom: 16px;
+}
+.article__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.208;
+  margin-bottom: 24px;
+}
+
+/* ========================= */
+
+.categories {
+  max-width: 1284px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* !expertise */
+.categories__expertise {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 305px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 141px;
+}
+.categories__section {
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  transition: box-shadow 0.3s;
+}
+
+.section__title {
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 1.5;
+  color: #81807e;
+  padding: 12px 24px;
+}
+.section__img {
+  padding: 30px 93px;
+  background-color: #262626;
+}
+.section__img img {
+  width: 120px;
+  height: 125px;
+  object-fit: cover;
+}
+.section__text {
+  font-family: "Roboto Flex", sans-serif;
+  color: #b3b3b2;
+  padding: 24px;
+}
+
+/* !record */
+.categories__record {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 293px);
+  gap: 27px;
+  justify-content: center;
+}
+
+.sub-section__laout-12 {
+  width: 88px;
+  height: 46px;
+}
+.sub-section__laout-2b {
+  width: 141px;
+  height: 56px;
+}
+.sub-section__laout-100 {
+  width: 124px;
+  height: 47px;
+}
+.sub-section__laout-25 {
+  width: 100px;
+  height: 46px;
+}
+.sub-section__laout-12,
+.sub-section__laout-2b,
+.sub-section__laout-100,
+.sub-section__laout-25 {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+.sub-section__laout-12::before,
+.sub-section__laout-2b::before,
+.sub-section__laout-100::before,
+.sub-section__laout-25::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sub-section__laout-12::before {
+  background-image: url(/img/12+.svg);
+  width: 88px;
+  height: 46px;
+}
+.sub-section__laout-2b::before {
+  background-image: url(/img/$2B+.svg);
+  width: 141px;
+  height: 66px;
+}
+.sub-section__laout-100::before {
+  background-image: url(/img/100+.svg);
+  width: 124px;
+  height: 47px;
+}
+.sub-section__laout-25::before {
+  background-image: url(/img/25+.svg);
+  width: 100px;
+  height: 46px;
+}
+.sub-section__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+.sub-section {
+  line-height: 1.188;
+}
+
+/* !media */
+
+@media (any-hover: hover) {
+  .article__img:hover .img__link {
+    scale: 1.1;
+  }
+  .categories__section:hover,
+  .sub-section:hover {
+    box-shadow: 0 0 15px #ffffff;
+  }
+  .title__link:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1141px) {
+  .article__block {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .article__container > :not(:last-child),
+  .article {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .categories__expertise,
+  .article__container > :not(:last-child),
+  .article {
+    margin-bottom: 25px;
+  }
+  .categories__record {
+    gap: 10px;
+  }
+}
