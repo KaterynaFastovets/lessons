@@ -17,14 +17,13 @@ main {
 }
 /* ========================= */
 
-
 .article {
   background-image: radial-gradient(#4e4e4e 1px, transparent 1px);
   background-size: 10px 10px;
   padding: 44px 0;
   margin-bottom: 134px;
 }
-.title__link:active{
+.title__link:active {
   color: rgba(0, 0, 255, 0.562);
 }
 .article__container {
@@ -158,22 +157,22 @@ main {
   background-size: cover;
 }
 .sub-section__laout-12::before {
-  background-image: url(/img/12+.svg);
+  background-image: url(../img/12+.svg);
   width: 88px;
   height: 46px;
 }
 .sub-section__laout-2b::before {
-  background-image: url(/img/$2B+.svg);
+  background-image: url(../img/$2B+.svg);
   width: 141px;
   height: 66px;
 }
 .sub-section__laout-100::before {
-  background-image: url(/img/100+.svg);
+  background-image: url(../img/100+.svg);
   width: 124px;
   height: 47px;
 }
 .sub-section__laout-25::before {
-  background-image: url(/img/25+.svg);
+  background-image: url(../img/25+.svg);
   width: 100px;
   height: 46px;
 }
