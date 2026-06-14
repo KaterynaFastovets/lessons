@@ -462,12 +462,6 @@ body {
     padding: 157px 58px 117px 600px;
   }
 }
-@media (max-width: 1287px) {
-  .heading-block {
-    padding: 157px 58px 117px 600px;
-  }
-}
-
 @media (max-width: 1139px) {
   .heading-block {
     padding: 157px 58px 117px 550px;
@@ -475,7 +469,10 @@ body {
 }
 @media (max-width: 1089px) {
   .heading-block {
-    padding: 58px 58px 500px;
+    padding: 58px 58px 400px;
+  }
+  .section{
+    margin: 0 auto;
   }
   .video-block {
   grid-template-columns: 1fr;
@@ -493,8 +490,7 @@ body {
 }
 @media (max-width: 597px) {
   .heading-block {
-    margin: 0 auto;
-    padding: 15px 15px 350px;
+    padding: 15px 15px 250px;
   }
 }
 @media (max-width: 511px) {
