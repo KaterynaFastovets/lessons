@@ -1,37 +1,32 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto%20Flex:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Homework_17</title>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header"></header>
-      <main class="main">
-        <div class="article">
-          <div class="article__container">
-            <div class="article__block">
-              <div class="article__text">
-                 <h2 class="article__title"><a class="title__link" href="#">Our Story</a></h2>
-               
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto%20Flex:wght@400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto%20Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Homework_17</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header"></header>
+    <main class="main">
+      <div class="about-us">
+        <div class="about-us__container">
+          <div class="about-us__block">
+            <div class="about-us__text">
+              <h1 class="about-us__title"><a class="title__link" href="#">Our Story</a></h1>
+              <div class="about-us__body-text">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -55,15 +50,16 @@
                   typesetting
                 </p>
               </div>
-              <div class="article__img img">
-                <a href="#" class="img__link">
-                  <img class="img__image" src="img/story.png" alt="Globe" />
-                </a>
-              </div>
+
             </div>
-            <div class="article__block">
-              <div class="article__text">
-                <h2 class="article__title"><a class="title__link" href="#">Our Mission</a></h2>
+            <div class="about-us__img img">
+              <img class="img__image" src="img/story.png" alt="Globe" />
+            </div>
+          </div>
+          <div class="about-us__block">
+            <div class="about-us__text">
+              <h2 class="about-us__title"><a class="title__link" href="#">Our Mission</a></h2>
+              <div class="about-us__body-text">
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -81,16 +77,17 @@
                   typesetting industry. Lorem Ipsum has been the industry
                 </p>
               </div>
-              <div class="article__img img">
-                <a href="#" class="img__link">
-                  <img class="img__image" src="img/mission.png" alt="Darts" />
-                </a>
-              </div>
+
+            </div>
+            <div class="about-us__img img">
+              <img class="img__image" src="img/mission.png" alt="Darts" />
             </div>
           </div>
         </div>
-        <div class="categories">
-          <h3 class="categories__title title"><a class="title__link" href="#">Core Expertise</a></h3>
+      </div>
+      <div class="categories">
+        <div class="categories__block-1">
+          <h2 class="categories__title title">Core Expertise</h2>
           <div class="categories__expertise">
             <div class="categories__section section">
               <a class="section__item-link" href="#">
@@ -150,11 +147,14 @@
               </a>
             </div>
           </div>
-          <h3 class="categories__title title"><a class="title__link" href="#">Our Track Record</a></h3>
+        </div>
+
+        <div class="categories__block-2">
+          <h2 class="categories__title title">Our Track Record</h2>
           <div class="categories__record">
             <div class="categories__sub-section sub-section">
               <a class="sub-section__item-link" href="#">
-                <div class="sub-section__laout-12"></div>
+                <div class="sub-section__laout">12+</div>
                 <h4 class="sub-section__title">Years AI & ML Development</h4>
                 <div class="sub-section__text">
                   <p>
@@ -166,14 +166,14 @@
             </div>
             <div class="categories__sub-section sub-section">
               <a class="sub-section__item-link" href="#">
-                <div class="sub-section__laout-2b"></div>
+                <div class="sub-section__laout">$2B+</div>
                 <h4 class="sub-section__title">Trading Volume Tested</h4>
                 <p>Through our battle-tested algorithmic trading systems</p>
               </a>
             </div>
             <div class="categories__sub-section sub-section">
               <a class="sub-section__item-link" href="#">
-                <div class="sub-section__laout-100"></div>
+                <div class="sub-section__laout">100+</div>
                 <h4 class="sub-section__title">Blockchain Projects Audited</h4>
                 <div class="sub-section__text">
                   <p>Including DeFi protocols and smart contract</p>
@@ -184,19 +184,20 @@
 
             <div class="categories__sub-section sub-section">
               <a class="sub-section__item-link" href="#">
-                <div class="sub-section__laout-25"></div>
+                <div class="sub-section__laout">25+</div>
                 <h4 class="sub-section__title">Esports Teams Audited</h4>
                 <div class="sub-section__text">
                   <p>Esports Teams Audited</p>
                 </div>
               </a>
             </div>
-
-
           </div>
         </div>
-      </main>
-      <footer class="footer"></footer>
-    </div>
-  </body>
+
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+</body>
+
 </html>
