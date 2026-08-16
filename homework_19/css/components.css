@@ -1,0 +1,51 @@
+/* buttons */
+
+.button {
+  padding: 1.25rem 1.6875rem;
+  border-radius: 1rem;
+}
+.button--blue {
+  background-color: #e7fafe;
+}
+.button--black {
+  min-width: 12.5rem;
+  background-color: black;
+  color: #e7fafe;
+}
+.button--white {
+  min-width: 9.75rem;
+  padding: 0.625rem 1.25rem;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* title & text */
+
+.title {
+  text-wrap: balance;
+  font-weight: 600;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.2; 
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.04em;
+}
+.text {
+  text-wrap: pretty;
+  line-height: 1.75;
+  color: rgb(0, 0, 0, 0.6);
+}
+.text p:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.title--center, .text--center {
+   text-align: center;
+}
+.title--left, .text--left {
+   text-align: left;
+}
+
+.text--left{
+  margin-bottom: clamp(2rem, 4vw, 4.5rem);
+}
+
+

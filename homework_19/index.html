@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Homework_19</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__conteiner">
+          <h1 class="header__title">Lesson 19</h1>
+        </div>
+      </header>
+
+      <main class="page">
+        <div class="recipes">
+          <div class="recipes__container">
+            <div class="recipes__badge badge-recipes">
+              <img
+                class="badge-recipes__icon"
+                src="img/heading/heading_badge.png"
+                alt="badge"
+              />
+            </div>
+            <div class="recipes__box">
+              <div class="recipes__body">
+                <div class="recipes__button">
+                  <button class="button button--white" type="button">
+                    <span>Hot Recipes</span>
+                  </button>
+                </div>
+                <div class="recipes__block">
+                  <div class="recipes__heading-item heading-item">
+                    <h2 class="heading-item__title">
+                      Spicy delicious chicken wings
+                    </h2>
+                    <div class="heading-item__text text">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetuipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqut enim ad minim
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipes__options options">
+                  <div class="options__item item-options options__item--timer">
+                    Minutes
+                  </div>
+                  <div class="options__item item-options options__item--snack">
+                    Chicken
+                  </div>
+                </div>
+                <div class="recipes__footer">
+                  <div class="recipes__user-block user-block">
+                    <div class="user-block__photo photo">
+                      <img
+                        class="photo__user"
+                        src="img/heading/user.png"
+                        alt="User photo"
+                      />
+                    </div>
+                    <div class="user-block__info info-user">
+                      <div class="info-user__name">John Smith</div>
+                      <time class="info-user__date" datetime="2022-03-15">
+                        15 March 2022
+                      </time>
+                      <div class=""></div>
+                    </div>
+                  </div>
+                  <button
+                    class="recipes__video-button button button--black"
+                    type="button"
+                  >
+                    <span>View Recipes</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="recipes__image img"></div>
+            </div>
+          </div>
+        </div>
+
+        <section class="categories">
+          <div class="categories__container">
+            <div class="categories__heading">
+              <h2 class="categories__lauot">Categories</h2>
+              <button
+                class="categories__button button button--blue"
+                type="button"
+              >
+                View All Categories
+              </button>
+            </div>
+            <ul class="categories__list">
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image19_shadow.png"
+                      alt="Breakfast"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image19.png"
+                      alt="Breakfast"
+                    />
+                  </div>
+                  <h3 class="categories__title">Breakfast</h3>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image20_shadow.png"
+                      alt="Vegan"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image20.png"
+                      alt="Vegan"
+                    />
+                  </div>
+                  <h3 class="categories__title">Vegan</h3>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image21_shadow.png"
+                      alt="Meat"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image21.png"
+                      alt="Meat"
+                    />
+                  </div>
+                  <h3 class="categories__title">Meat</h3>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image22_shadow.png"
+                      alt="Dessert"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image22.png"
+                      alt="Dessert"
+                    />
+                  </div>
+                  <h3 class="categories__title">Dessert</h3>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image22_shadow.png"
+                      alt="Lunch"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image23.svg"
+                      alt="Lunch"
+                    />
+                  </div>
+                  <h3 class="categories__title">Lunch</h3>
+                </a>
+              </li>
+              <li class="categories__item">
+                <a href="#" class="categories__link">
+                  <div class="categories__icon">
+                    <img
+                      class="categories__shadow-img-icon"
+                      src="img/categories/image24_shadow.png"
+                      alt="Chocolate"
+                    />
+                    <img
+                      class="categories__img-icon"
+                      src="img/categories/image24.png"
+                      alt="Chocolate"
+                    />
+                  </div>
+                  <h3 class="categories__title">Chocolate</h3>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="recipes">
+          <div class="recipes__container">
+            <h2 class="recipes__title title title--center">
+              Simple and tasty recipes
+            </h2>
+            <div class="recipes__text text text--center">
+              <p>
+                Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqut enim
+                ad minim
+              </p>
+            </div>
+            <ul class="recipes__list">
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/01.jpg"
+                      alt="Big and Juicy Wagyu Beef Cheeseburger"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Big and Juicy Wagyu Beef Cheeseburger
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/02.jpg"
+                      alt="Fresh Lime Roasted Salmon with Ginger Sauce"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Fresh Lime Roasted Salmon with Ginger Sauce
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/03.jpg"
+                      alt="Strawberry Oatmeal Pancake with Honey Syrup"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Strawberry Oatmeal Pancake with Honey Syrup
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/04.jpg"
+                      alt="Fresh and Healthy Mixed Mayonnaise Salad"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Fresh and Healthy Mixed Mayonnaise Salad
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/05.jpg"
+                      alt="Fresh and Healthy Mixed MayonnaiseChicken Meatballs with Cream Cheese"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  ></button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Chicken Meatballs with Cream Cheese
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="gradient-recipe-card">
+                <svg
+                  class="gradient-recipe-card__svg"
+                  width="400"
+                  height="434"
+                  viewBox="0 0 400 434"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M200 -138L202.813 181.256L255.534 -133.629L208.37 182.136L309.701 -120.625L213.721 183.874L361.167 -99.3073L218.734 186.429L408.664 -70.201L223.286 189.736L451.023 -34.0229L227.264 193.714L487.201 8.33624L230.571 198.266L516.307 55.8334L233.126 203.279L537.625 107.299L234.864 208.63L550.629 161.466L235.744 214.187L555 217L235.744 219.813L550.629 272.534L234.864 225.37L537.625 326.701L233.126 230.721L516.307 378.167L230.571 235.734L487.201 425.664L227.264 240.286L451.023 468.023L223.286 244.264L408.664 504.201L218.734 247.571L361.167 533.307L213.721 250.126L309.701 554.625L208.37 251.864L255.534 567.629L202.813 252.744L200 572L197.187 252.744L144.466 567.629L191.63 251.864L90.299 554.625L186.279 250.126L38.8334 533.307L181.266 247.571L-8.66376 504.201L176.714 244.264L-51.0229 468.023L172.736 240.286L-87.201 425.664L169.429 235.734L-116.307 378.167L166.874 230.721L-137.625 326.701L165.136 225.37L-150.629 272.534L164.256 219.813L-155 217L164.256 214.187L-150.629 161.466L165.136 208.63L-137.625 107.299L166.874 203.279L-116.307 55.8334L169.429 198.266L-87.201 8.33624L172.736 193.714L-51.0229 -34.0229L176.714 189.736L-8.66376 -70.201L181.266 186.429L38.8334 -99.3073L186.279 183.874L90.299 -120.625L191.63 182.136L144.466 -133.629L197.187 181.256L200 -138Z"
+                    fill="url(#paint0_radial_101_983)"
+                  />
+                  <defs>
+                    <radialGradient
+                      id="paint0_radial_101_983"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(200 217) rotate(90) scale(215.5)"
+                    >
+                      <stop stop-color="#3A795B" />
+                      <stop offset="1" stop-color="#3A795B" stop-opacity="0" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+
+                <h3 class="gradient-recipe-card__title">
+                  Don’t forget to eat healthy food
+                </h3>
+                <img
+                  class="gradient-recipe-card__img"
+                  src="img/products/06.png"
+                  alt="fish"
+                />
+                <a
+                  class="gradient-recipe-card__link"
+                  target="_blank"
+                  href="www.foodieland.com"
+                >
+                  www.foodieland.com
+                </a>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/07.jpg"
+                      alt="Fresh and Healthy Mixed Mayonnaise Salad"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      Fresh and Healthy Mixed Mayonnaise Salad
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/08.jpg"
+                      alt="The Best Easy One Pot Chicken and Rice"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      The Best Easy One Pot Chicken and Rice
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="recipe-card">
+                <div class="recipe-card__image-recipe image-recipe">
+                  <a class="image-recipe__link-img" href="#">
+                    <img
+                      class="img"
+                      src="img/products/09.jpg"
+                      alt="The Creamiest Creamy Chicken and Bacon Pasta"
+                    />
+                  </a>
+                  <button
+                    class="image-recipe__favorite-btn favorite-btn"
+                    type="button"
+                  >
+                    <span></span>
+                  </button>
+                </div>
+                <div class="recipe-card__body">
+                  <a class="recipe-card__link-title" href="#">
+                    <h3 class="recipe-card__title">
+                      The Creamiest Creamy Chicken and Bacon Pasta
+                    </h3>
+                  </a>
+                  <div class="recipe-card__options options">
+                    <div class="options__item options__item--timer">
+                      Minutes
+                    </div>
+                    <div class="options__item options__item--snack">
+                      Chicken
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="chef">
+          <div class="chef__container">
+            <div class="chef__section section-chef">
+              <h2 class="section-chef__title title title--left">
+                Everyone can be a chef in their own kitchen
+              </h2>
+              <div class="text text--left">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+              <button class="button button--black" type="button">
+                Learn More
+              </button>
+            </div>
+            <div class="chef__image image">
+              <img
+                src="img/heading/heading1.svg"
+                alt="Chef"
+                class="image__chef"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="post">
+          <div class="post__container">
+            <div class="post__heading">
+              <h2 class="post__recipes-title title title--center">
+                Check out
+                <a class="post__instagram-link" target="_blank" href="#">
+                  @foodieland
+                </a>
+                on Instagram
+              </h2>
+              <div class="post__recipes-text text text--center">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqut
+                  enim ad minim
+                </p>
+              </div>
+            </div>
+
+            <ul class="post__recenzie list-post-recenzie">
+              <li class="post__item">
+                <div class="post__transition-item">
+                  <div class="post__header">
+                    <div class="post__info">
+                      <div class="post__logo">
+                        Foodieland
+                        <span>.</span>
+                      </div>
+                      <div class="post__name-logo">
+                        <p>Foodieland.</p>
+                        <span>Tokyo, Japan</span>
+                      </div>
+                    </div>
+
+                    <div class="post__more"></div>
+                  </div>
+                  <a href="#" class="post__link">
+                    <div class="post__image image-post">
+                      <img
+                        class="image-post__img"
+                        src="./img/posts/Rectangle.jpg"
+                        alt="The vegetables dishes need to have certain vitamin for those people"
+                      />
+                      <span class="post__counter-image">1/3</span>
+                    </div>
+                  </a>
+                  <div class="post__footer">
+                    <div class="post__actions actions-post">
+                      <div class="actions-post__block">
+                        <div class="actions-post__icons">
+                          <button class="like" type="button"></button>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="actions-post__counter-images"></div>
+                        <button
+                          type="button"
+                          class="actions-post__icon-save"
+                        ></button>
+                      </div>
+                      <div class="actions-post__info-likes">
+                        Liked by
+                        <span>craig_love</span>
+                        and
+                        <span>44,686</span>
+                      </div>
+                    </div>
+                    <div class="post__text">
+                      <p>
+                        <strong>Foodieland.</strong>
+                        The vegetables dishes need to have certain vitamin for
+                        those people
+                      </p>
+                    </div>
+                    <time class="post__data" datetime="2026-09-19">
+                      September 19
+                    </time>
+                  </div>
+                </div>
+              </li>
+              <li class="post__item">
+                <div class="post__transition-item">
+                  <div class="post__header">
+                    <div class="post__info">
+                      <div class="post__logo">
+                        Foodieland
+                        <span>.</span>
+                      </div>
+                      <div class="post__name-logo">
+                        <p>Foodieland.</p>
+                        <span>Tokyo, Japan</span>
+                      </div>
+                    </div>
+
+                    <div class="post__more"></div>
+                  </div>
+                  <a href="#" class="post__link">
+                    <div class="post__image image-post">
+                      <img
+                        class="image-post__img"
+                        src="./img/posts/Rectangle-1.jpg"
+                        alt="The vegetables dishes need to have certain vitamin for those people"
+                      />
+                      <span class="post__counter-image">1/3</span>
+                    </div>
+                  </a>
+                  <div class="post__footer">
+                    <div class="post__actions actions-post">
+                      <div class="actions-post__block">
+                        <div class="actions-post__icons">
+                          <button class="like" type="button"></button>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="actions-post__counter-images"></div>
+                        <button
+                          type="button"
+                          class="actions-post__icon-save"
+                        ></button>
+                      </div>
+                      <div class="actions-post__info-likes">
+                        Liked by
+                        <span>craig_love</span>
+                        and
+                        <span>44,686</span>
+                      </div>
+                    </div>
+                    <div class="post__text">
+                      <p>
+                        <strong>Foodieland.</strong>
+                        Sweet food can bring someon into happiness as long as
+                        they don’t eat to much
+                      </p>
+                    </div>
+                    <time class="post__data" datetime="2026-09-19">
+                      September 19
+                    </time>
+                  </div>
+                </div>
+              </li>
+              <li class="post__item">
+                <div class="post__transition-item">
+                  <div class="post__header">
+                    <div class="post__info">
+                      <div class="post__logo">
+                        Foodieland
+                        <span>.</span>
+                      </div>
+                      <div class="post__name-logo">
+                        <p>Foodieland.</p>
+                        <span>Tokyo, Japan</span>
+                      </div>
+                    </div>
+
+                    <div class="post__more"></div>
+                  </div>
+                  <a href="#" class="post__link">
+                    <div class="post__image image-post">
+                      <img
+                        class="image-post__img"
+                        src="./img/posts/Rectangle-2.jpg"
+                        alt="The vegetables dishes need to have certain vitamin for those people"
+                      />
+                      <span class="post__counter-image">1/3</span>
+                    </div>
+                  </a>
+                  <div class="post__footer">
+                    <div class="post__actions actions-post">
+                      <div class="actions-post__block">
+                        <div class="actions-post__icons">
+                          <button class="like" type="button"></button>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="actions-post__counter-images"></div>
+                        <button
+                          type="button"
+                          class="actions-post__icon-save"
+                        ></button>
+                      </div>
+                      <div class="actions-post__info-likes">
+                        Liked by
+                        <span>craig_love</span>
+                        and
+                        <span>44,686</span>
+                      </div>
+                    </div>
+                    <div class="post__text">
+                      <p>
+                        <strong>Foodieland.</strong>
+                        What are you doing before start cooking? prepare the
+                        tools or ingredients?
+                      </p>
+                    </div>
+                    <time class="post__data" datetime="2026-09-19">
+                      September 19
+                    </time>
+                  </div>
+                </div>
+              </li>
+              <li class="post__item">
+                <div class="post__transition-item">
+                  <div class="post__header">
+                    <div class="post__info">
+                      <div class="post__logo">
+                        Foodieland
+                        <span>.</span>
+                      </div>
+                      <div class="post__name-logo">
+                        <p>Foodieland.</p>
+                        <span>Tokyo, Japan</span>
+                      </div>
+                    </div>
+                    <div class="post__more"></div>
+                  </div>
+                  <a href="#" class="post__link">
+                    <div class="post__image image-post">
+                      <img
+                        class="image-post__img"
+                        src="./img/posts/Rectangle-3.jpg"
+                        alt="The vegetables dishes need to have certain vitamin for those people"
+                      />
+                      <span class="post__counter-image">1/3</span>
+                    </div>
+                  </a>
+                  <div class="post__footer">
+                    <div class="post__actions actions-post">
+                      <div class="actions-post__block">
+                        <div class="actions-post__icons">
+                          <button class="like" type="button"></button>
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="actions-post__counter-images"></div>
+                        <button
+                          type="button"
+                          class="actions-post__icon-save"
+                        ></button>
+                      </div>
+                      <div class="actions-post__info-likes">
+                        Liked by
+                        <span>craig_love</span>
+                        and
+                        <span>44,686</span>
+                      </div>
+                    </div>
+                    <div class="post__text">
+                      <p>
+                        <strong>Foodieland.</strong>
+                        Steak never be wrong, it’s suitable for you who want
+                        romantic dinner
+                      </p>
+                    </div>
+                    <time class="post__data" datetime="2026-09-19">
+                      September 19
+                    </time>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <button class="button button--black" type="button">
+              Visit Our Instagram
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
